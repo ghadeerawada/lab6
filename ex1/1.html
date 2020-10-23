@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <title>Hello</title>
+
+</head>
+<body>
+  <ul>
+      <li class="test">1st element</li>
+      <li>2nd element</li>
+      <li>3rd element</li> 
+  </ul>
+  <button name="button">Change</button>
+  <script>
+      $('ul li').each(function(i){
+          $(this).attr('rel');
+      });
+      $('ul li').each(function(i){
+          $(this).hide();
+      });
+      $('ul li').each(function(i){
+          $(this).show();
+      });
+      $('.test').each(function(){
+          $(this).hide();
+      });
+      $('button').on("click",function(){
+          $('li').css("color","blue");
+      });
+      $('button').on("click",function(){
+          $('li').toggle(function(){
+              $('li').css("color", "black");
+          })
+      })
+
+
+  </script>
+</body>
+
+</html>
